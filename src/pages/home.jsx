@@ -9,6 +9,8 @@ function Home() {
 
   const data = UserService.getUser() ;
   return (
+   
+    
     <main className="timeline">
 
       <Header />
@@ -17,8 +19,10 @@ function Home() {
       {
           data.map((a) => <Tweet user={a}/>)
 
-      }   
+      } 
+
     </main>
+    
   );
 }
 

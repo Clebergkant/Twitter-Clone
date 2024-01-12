@@ -1,11 +1,16 @@
 import React from 'react';
+import Sidebar from './sidebar';
+import Home from '../pages/home';
+import Trends from './trends';
 
-function Layout({children}) {
+function Layout() {
     return (
         <>
-            <div className="left-sidebar"/>
-            {children}
-            <div className="right-sidebar" />
+
+            <Sidebar />           
+            <Home />
+            <Trends />
+            
         </>
     );
 }

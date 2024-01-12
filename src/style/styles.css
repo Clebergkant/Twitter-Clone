@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+.sidebar{
+    font-family: 'Inter', sans-serif;
+    padding: 1.5rem 1rem;
+    width: 250px;
+    position: relative;
+    height: 100vh;
+}
+
+
+.nav-sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    top: 2.3rem;
+}
+
+.nav-sidebar li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-sidebar button{
+    padding: .7rem 80px;
+}
+
+.trends{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 2.2rem;
+}
+.trendsDivSearch{
+    display: flex;
+    gap: 20px;
+    height: 35px;
+    width: 100%;
+    background-color: rgb(76, 76, 78);
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.trendsDivSearch input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    resize: none;
+}

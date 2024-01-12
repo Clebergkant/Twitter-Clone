@@ -11,15 +11,35 @@ body{
 #root{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    } */
 
 .timeline {
     flex: 0 0 800px;
     font-family: 'Inter', sans-serif;
     border-left: 1px solid #2F3336;
     border-right: 1px solid #2F3336;
+    
 }
+
+/* .sidebar {
+    flex: 0 0 auto;
+    font-family: 'Inter', sans-serif;
+    border-left: 1px solid #2F3336;
+    border-right: 1px solid #2F3336;
+}
+
+.trends {
+    flex: 0 0 auto;
+    font-family: 'Inter', sans-serif;
+    border-left: 1px solid #2F3336;
+    border-right: 1px solid #2F3336;
+} */
 
 .header {
     padding: 1.5rem 1rem;
@@ -198,7 +218,20 @@ body{
     color: rgb(107, 104, 104);
 }
 
-tweet-action a {
+.tweet-action a {
     text-decoration: none;
     color: rgb(66, 63, 63);
 }
+
+/* ul {
+   padding-top: 15%; 
+   padding-left: 35%;
+}
+ul li {
+line-height: 2em;
+list-style: none;
+font-weight: 700;
+cursor: pointer;
+} */
+
+
