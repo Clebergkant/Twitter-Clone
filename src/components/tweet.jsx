@@ -9,41 +9,47 @@ import button4 from '../images/button4.png';
 
 import bien from '../images/bien.png'
 import tweetImage from '../images/tweet-image.png'
+import Tweetaction from './Tweetaction';
+import {users} from '../models/Users.js'
 
-function Tweet({user}){
+import { Link } from 'react-router-dom';
+
+function Tweet({tweet}){
+
+
+  const iduser = tweet.userId ;
+
+  const userX = users.find((user)=> user.userId == iduser);
 
     return(
 
         <div className="tweets">
         <div className="tweet">
-
-          <div className="tweet-avatar"><img src={user.tweetProfilPhoto} alt="tweet avatar" /></div>
-          {console.log(user.tweetProfilPhoto)}
+        
+          <div className="tweet-avatar"><Link to={`/${userX.Author}`}><img src={userX.avatar} alt="tweet avatar" /></Link></div>
 
           <div className="tweet-content">
               <div className="tweet-body">
                  <div className="tweet-title">
-                  <div className="tweet-title-author">{user.tweetAuthor}</div>
-                  <div className=''>{user.compteCertif && <img src={bien} alt="Certification Icone" /> }</div>
+                  <div className="tweet-title-author">{userX.Author}</div>
+                  <div className=''>{userX.compteCertif && <img src={bien} alt="Certification Icone" /> }</div>
                   <div className='tweet-title-details'>
-                    <span>{user.tweetPseudo} </span>
+                    <span>{userX.Pseudo} </span>
                     <span>.</span>
-                    <span> {user.tweetTimer}</span>
+                    <span> {tweet.tweetTimer}</span>
                   </div>
                  
                  </div>
-                 <div className="tweet-text"><p>{user.tweetText}</p></div>
-                 <div className="tweet-image">{ user.tweetImage !="" && <img src={user.tweetImage} alt="Image du Tweet"/>}</div>
+                 <div className="tweet-text"><p>{tweet.tweetText}</p></div>
+                 <div className="tweet-image">{ tweet.tweetImage !="" && <img src={tweet.tweetImage} alt="Image du Tweet"/>}</div>
               </div>
 
                  
               <div className="tweet-actions">
-               
-                 <a href="" className="tweet-action"><img src={button1} alt="action 1" /><span className="remover">{user.tweetMessageNbre}</span></a>
-                 <a href="" className="tweet-action"><img src={button2} alt="action 2" /><span>{user.tweetActualNbre}</span></a>
-                 <a href="" className="tweet-action"><img src={button3} alt="action 3" /><span>{user.tweetLikeNbre}</span></a>
-                 <a href="" className="tweet-action"><img src={button4} alt="action 4" /></a>
-                
+                  <Tweetaction icon={button1} number={tweet.tweetMessageNbre}/>
+                  <Tweetaction icon={button2} number={tweet.tweetActualNbre}/>
+                  <Tweetaction icon={button3} number={tweet.tweetLikeNbre}/>
+                  <Tweetaction icon={button4} />
               </div>
             
           </div>

@@ -3,10 +3,8 @@ function Sidebarbutton() {
     return (
     
         <div>
-       <a href="#">
-        <button className="tweet">Tweet</button>
-       </a>
-       </div>
+            <button className="tweet">Tweet</button>
+        </div>
 
     )
 

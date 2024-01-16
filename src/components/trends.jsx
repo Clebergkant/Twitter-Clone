@@ -1,28 +1,29 @@
 
 import '../style/styles.css'
 import { CiSearch } from "react-icons/ci";
+import Trendsforyou from './trendsforyou';
+import Whotofollow from './whotofollow';
+import Footer from './Footer';
 
 
 function Trends() {
-    const color=""
+    
     return (
 
         <div className="trends">
+            
                 <div className="trendsDivSearch">
                     <CiSearch />
-                    <input className="trendsDivSearchInput" type="text" placeholder='Search'/>
-                            
+                    <input className="trendsDivSearchInput" type="text" placeholder='Search Twitter'/>        
                 </div>
-                <div className="trendsDivTrendsForYou">X</div>
-                <div className='trendsDivW'>Y</div>
-                <div>Terms of service</div>
 
+                <Trendsforyou/>
 
+                <Whotofollow/>
+
+                <Footer/>
         </div>
-
-
     )
-
 }
 
 export default Trends;

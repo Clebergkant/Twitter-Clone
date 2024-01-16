@@ -1,16 +1,21 @@
+import { Link } from 'react-router-dom';
 import action1 from '../images/action1.png';
 import action2 from '../images/action2.png';
 import action3 from '../images/action3.png';
 import action4 from '../images/action4.png';
 import action5 from '../images/action5.png';
 import avatar from '../images/avatar.png';
+import { users } from '../models/Users.js';
 
 function TweetEditor() {
+
+  const userX = users.find((user) => user.isLogin === true);
+
 
     return (
         <div className="tweet-editor">
       
-             <div className="avatar"><img src={avatar} alt="avatar" /></div>
+             <div className="avatar"><Link to={`/${userX.Author}`} className="link-dom"><img src={avatar} alt="avatar" /></Link></div>
         
                 <div className="tweet-editor-form">
 

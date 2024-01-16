@@ -1,4 +1,4 @@
-import UserService from '../components/models/user.js';
+import TweetService from '../models/Tweet.js';
 import React from 'react';
 import Header from '../components/header.jsx';
 import TweetEditor from '../components/tweet-editor.jsx';
@@ -7,7 +7,7 @@ import Tweet from '../components/tweet.jsx';
 
 function Home() {
 
-  const data = UserService.getUser() ;
+  const data = TweetService.getTweet() ;
   return (
    
     
@@ -17,8 +17,7 @@ function Home() {
       <TweetEditor/>
 
       {
-          data.map((a) => <Tweet user={a}/>)
-
+          data.map((a) => <Tweet tweet={a}  key={a.id}/>)
       } 
 
     </main>

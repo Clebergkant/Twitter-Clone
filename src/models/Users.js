@@ -1,0 +1,73 @@
+import iconCertifier from '../images/bien.png'
+
+export const users = [
+  
+    {
+      userId: 1,
+      avatar: '/src/images/tweet-profile-photo.png',
+      Author: "CNN",
+      iconCertification: iconCertifier,
+      banner: '/src/images/arrierePlan.jpg',
+      Pseudo: "@CNN",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi eos quo aspernatur enim reprehenderit, fugit velit magnam amet cum, molestias doloribus, quaerat adipisci ipsa fuga sunt voluptatem dolorem dolores. Enim.",    
+      compteCertif: "true",
+      linkWeb: "cnn.com",
+      dateCreated: "A rejoint Twitter en février 2007",
+      abonnemets: 1086,
+      abonne: 62 + " M",
+      suiviPar: "Suivi par Benito et PlayStation",
+      isLogin: false,
+    },
+    {
+      userId: 2,
+      avatar: "/src/images/nytimes.png",
+      Author: "The New York Times",
+      iconCertification: iconCertifier,
+      banner: "/src/images/arrierePlan.jpg",
+      Pseudo: "@nytimes",
+      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+      compteCertif: "true",
+      linkWeb: "nytimes.com",
+      dateCreated: "A rejoint Twitter en février 2012",
+      abonnemets: 2086,
+      abonne: 72 + " M",
+      suiviPar: "Suivi par Matthieu et Ligue des champions",
+      isLogin: false,
+    },
+    {
+      userId: 3,
+      avatar:  "/src/images/twitter.png",
+      Author: "Twitter",
+      iconCertification: iconCertifier,
+      banner: "/src/images/arrierePlan.jpg",
+      Pseudo: "@Twitter",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+      compteCertif: "true",
+      linkWeb: "twitter.com",
+      dateCreated: "A rejoint Twitter en février 2005",
+      abonnemets: 9850,
+      abonne: 995 + " M",
+      suiviPar: "Suivi par Sacre et Sylvin",
+      isLogin: false,
+    },
+    {
+      userId: 4,
+      avatar: "/src/images/avatar.png",
+      Author: "Brandley Ortiz",
+      iconCertification: iconCertifier,
+      banner: '/src/images/arrierePlan.jpg',
+      Pseudo: "@brandley",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi eos quo aspernatur enim reprehenderit, fugit velit magnam amet cum, molestias doloribus, quaerat adipisci ipsa fuga sunt voluptatem dolorem dolores. Enim.",
+      compteCertif: "true",
+      linkWeb: "brandley.com",
+      dateCreated: "A rejoint Twitter en février 2001",
+      abonnemets: 4086,
+      abonne: 100 + " M",
+      suiviPar: "Suivi par Benito et Matthieu Nzing",
+      isLogin: true,
+    },
+    
+  ];
